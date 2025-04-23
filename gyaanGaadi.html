@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>GyaanGaadi</title>
+    <link rel="stylesheet" href="gyaanGaadi.css">
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #7897fa;
+            box-shadow: 0 4px 8px rgba(61, 39, 39, 0.1);
+            z-index: 1;
+            animation: fadeIn 0.3s ease-in-out;
+            border-radius: 8px;
+            width: 200px; /* Adjust the width as needed */
+            z-index: 1;
+            padding: 0;
+            margin: 0;
+            left: -150px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content div {
+            padding: 10px;
+            margin: 0;
+            border-bottom: 1px solid #ef6bbb;
+            transition: background-color 0.3s ease-in-out;
+            position: relative;
+        }
+
+        .sub-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #7897fa;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 200px;
+            padding: 10px;
+            z-index: 2;
+            margin-top: 0;
+        }
+
+        .dropdown-content div:hover .sub-dropdown {
+            display: block;
+        }
+
+        .sub-dropdown a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+            border-bottom: 1px solid #ef6bbb;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .sub-dropdown a:last-child {
+            border-bottom: none; /* Remove border on the last option */
+        }
+
+        .sub-dropdown a:hover {
+            background-color: #8fa4e8;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+            border-bottom: 1px solid #ef6bbb;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .dropdown-content a:last-child {
+            border-bottom: none; /* Remove border on the last option */
+        }
+
+        .dropdown-content a:hover {
+            background-color: #8fa4e8;
+        }
+
+        .dropdown-content div:hover {
+            background-color: #eac5c5;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="dropdown">
+            <div>STUDY MATERIAL</div>
+            <div class="dropdown-content">
+                <div>For Kids (Pre nursery-Grade 6)</div>
+                <div>
+                    For Grade 7-Grade 12 Students
+                    <div class="sub-dropdown">
+                        <a href="proj7.html">Grade 7</a>
+                        <a href="#">Grade 8</a>
+                        <a href="#">Grade 9</a>
+                        <a href="#">Grade 10</a>
+                        <a href="#">Grade 11</a>
+                        <a href="#">Grade 12</a>
+                    </div>
+                </div>
+                <div>For College and Universities Students</div>
+            </div>
+        </div>
+        <div>EXAMS</div>
+        <div>FEATURES</div>
+        <div>VOLUNTEER</div>
+        <div class="dropdown">
+            <div>PROFILE</div>
+            <div class="dropdown-content">
+                <div style="font-weight: bold; color: black;;" >Hi, Username!</div>
+                <div>
+                    <div class="sub-dropdown">
+                        <a href="#">Settings</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="sub-dropdown">
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div><a href="login.html"></a></div>
+    </div>
+    <div class="main_box">
+        <table>
+            <tr>
+                <td ><img class="logo" src="gyaan logo 2.PNG"></td>
+                <td class="title_main pos_title">GyaanGaadi</td>
+                <td class="slogan">EDUCATION BEYOND BOUNDARIES.</td>
+            </tr>
+            <tr>
+                <td class="pos_minslogan">FOR CHILDREN IN EVERY CORNER OF INDIA!</td>
+                <td class="pos_sign"><button class="sign_button">Sign up</button></td>
+                <td><a href="login.html"><button class="sign_button">Log in</button></a></td>
+            </tr>
+        </table>  
+    </div>
+    <div class="tag_line">"WE ARE COMMITTED TO ENSURE ACCESS TO EDUCATION FOR ALL CHILDREN IN INDIA "</div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="NL.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Ranjitsing-Sanjaysing-Rajput-Voices-2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="0dfbc6d0-6743-47f9-82cf-e910291a57a0.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="adjectives">
+        <div class="adj" style="background-color: orange;">LEARN</div>
+        <div class="adj" style="background-color: green;">PRACTICE</div>
+        <div class="adj" style="background-color: purple;">TEST</div>
+        <div class="adj" style="background-color: brown;">LOCATION</div>
+        <div class="adj" style="background-color: deeppink;">ACHIEVE</div>
+        <div class="adj" style="background-color: orange;">EXPERIMENT</div>
+        <div class="adj" style="background-color: green;">ASK</div>
+        <div class="adj" style="background-color: purple;">ACTIVITIES</div>
+        <div class="adj" style="background-color: brown;">COMMUNITY</div>
+        <div class="adj" style="background-color: deeppink;">VOLUNTEERS</div>
+    </div>
+    <div class="vid_block">
+        <div><img class="book_pic" src="boook.jpg"></div>
+       <div class="knowledge">
+           <div style="font-size: x-large; font-weight: bolder;">KNOWLEDGE is POWER</div>
+           <div>Incredible knowledge harmonizes with exceptional ease of access</div>
+        </div>
+    </div>
+    <div class="features">
+        <div class="access">
+            <div><img class="access_img" src="access.webp"></div>
+            <div>
+               <div class="access_pos" style="font-size: x-large; font-weight: bold;">EASILY ACCESSIBLE</div>
+               <div style="width: 900px;">Train teachers or facilitators who can travel with the mobile unit. They should be skilled in using technology and culturally sensitive teaching methods.</div>
+            </div>
+        </div>
+        <div class="access">
+           
+            <div>
+               <div class="access_pos" style="font-size: x-large; font-weight: bold;">TRAINED TUTORS</div>
+               <div style="width: 900px;">Access proficient tutors anytime, anywhere. Seamless learning with online lectures ensures continuity in the absence of a tutor.</div>
+            </div>
+            <div><img class="access_img" src="trained.jpg"></div>
+        </div>
+        <div class="access">
+            <div><img class="access_img" src="curri.png"></div>
+            <div>
+               <div class="access_pos" style="font-size: x-large; font-weight: bold;">CURRICULUM DEVELOPMENT</div>
+               <div style="width: 900px;">Develop a curriculum that is tailored to the needs of nomadic children, considering their cultural background and the challenges they face.</div>
+            </div>
+        </div>
+    </div>
+    <div class="join">
+        <div class="text_join">"THERE'S NO BETTER TIME TO START. JOIN US NOW!"</div>
+        <div class="join_img_pos">
+            <div><img src="phone-removebg-preview.png"></div>
+            <div><img class="laptop" src="download__1_-removebg-preview.png"></div>
+            <div class="sign_pos">
+                <div> <button class="sign_button b_size">Sign up</button></div>
+                <br><br><br>
+                 <div><button class="sign_button b_size">Log in</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

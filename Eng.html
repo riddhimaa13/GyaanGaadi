@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Study Materials</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      background-image: url('bi2.avif'); /* Replace with your background image */
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .dropdown-option {
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      color: #fff;
+      cursor: pointer;
+      background-color: #57b3e9; /* Blue background color */
+      border-radius: 5px;
+      transition: background-color 0.3s ease; /* Transition effect on hover */
+    }
+
+    .dropdown-option:hover {
+      background-color: #2980b9; /* Darker blue on hover */
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ec8968; /* Blue background color */
+      box-shadow: 0 8px 16px rgba(16, 16, 16, 0.707);
+      z-index: 1;
+      top: 100%;
+      left: 0;
+      min-width: 160px;
+      overflow: hidden;
+      border-radius: 5px;
+      transition: transform 0.3s ease, opacity 0.3s ease; /* Transition effect on appearance */
+      transform-origin: top center;
+      opacity: 0;
+      transform: scaleY(0);
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 12px 16px;
+      text-decoration: none;
+      color: #0b0b0b;
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* Transition effect on hover */
+    }
+
+    .dropdown-content a:hover {
+      background-color: #92caf0; /* Darker blue on hover */
+    }
+
+    .dropdown:hover .dropdown-content {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="dropdown">
+      <div class="dropdown-option">Syllabus</div>
+      <div class="dropdown-content">
+        <a href="syllabus_option1.html">Chapter 1: Three Questions & The Squirrel</a>
+        <a href="syllabus_option2.html">Chapter 2: A Gift of Chappals & The Rebel</a>
+        <a href="syllabus_option3.html">Chapter 3: Gopal and the Hilsa Fish & The Shed</a>
+        <a href="syllabus_option3.html"> Chapter 4: The Ashes That Made Trees Bloom & Chivvy</a>
+        <a href="syllabus_option3.html">Chapter 5: Quality & Trees</a>
+        <a href="syllabus_option3.html">Chapter 6: Expert Detectives & Mystery of the Talking Fan</a>
+        <a href="syllabus_option3.html">Chapter 7: The Invention of Vita-Wonk & Dad and the Cat and the Tree & Garden Snake</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+        <div class="dropdown-option">Notes</div>
+        <div class="dropdown-content">
+          <a href="english ch 1.pdf">Unit 1</a>
+          <a href="eng ch 2.pdf">Unit 2</a>
+          <a href="ch 3.pdf">Unit 3</a>
+          <a href="ch 4.pdf">Unit 4</a>
+          <a href="notes_option3.html">Unit 5</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <div class="dropdown-option">Chapter Wise Solutions</div>
+        <div class="dropdown-content">
+          <a href="Ch 1 ncert sol.pdf">Chapter 1 Solutions</a>
+          <a href="ch 2 ncert sol.pdf">Chapter 2 Solutions</a>
+          <a href="ch 3 ncert sol.pdf">Chapter 3 Solutions</a>
+          <a href="ch 4 ncert sol.pdf">Chapter 4 Solutions</a>
+          <a href="ch 5 ncert sol.pdf">Chapter 5 Solutions</a>
+          <a href="solutions_option3.html">Chapter 6 Solutions</a>
+          <a href="solutions_option3.html">Chapter 7 Solutions</a>
+        </div>
+      </div>
+
+    <div class="dropdown">
+      <div class="dropdown-option">Previous Year Questions</div>
+      <div class="dropdown-content">
+        <a href="PQ-1.pdf">Previous Year Questions 1</a>
+        <a href="PQ-2.pdf">Previous Year Questions 2</a>
+        <a href="PQ-3.pdf">Previous Year Questions 3</a>
+        <a href="PQ-4.pdf">Previous Year Questions 4</a>
+      </div>
+    </div>
+
+
+    <div class="dropdown">
+      <div class="dropdown-option">Practice Questions</div>
+      <div class="dropdown-content">
+        <a href="practice_option1.html">Worksheet 1</a>
+        <a href="practice_option2.html">Worksheet 2</a>
+        <a href="practice_option3.html">Worksheet 3</a>
+        <a href="practice_option3.html">Worksheet 4</a>
+        <a href="practice_option3.html">Worksheet 5</a>
+        <a href="practice_option3.html">Worksheet 6</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

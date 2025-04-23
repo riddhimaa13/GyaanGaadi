@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Browser</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      background-image: url('bi.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    nav {
+      background-color: #261203;
+      color: white;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .white {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-button {
+      margin-right: 10px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: rgb(6, 6, 10);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      transition: transform 0.2s;
+    }
+
+    .nav-button:hover {
+      transform: scale(1.1);
+    }
+
+    .profile-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-icon {
+      cursor: pointer;
+      border: none;
+      border-radius: 60%; /* Make it circular */
+      overflow: hidden;
+      width: 40px; /* Set the size of the circular profile image */
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .profile-icon img {
+      width: 100%; /* Ensure the image inside the circular container takes up the full space */
+      height: auto;
+      border-radius: 50%; /* Ensure the image inside the circular container is also circular */
+      transition: transform 0.2s;
+    }
+
+    .profile-icon:hover img {
+      transform: scale(1.1);
+    }
+
+    .profile-text {
+      color: #4CAF50;
+      font-size: 14px;
+    }
+
+    .C {
+      margin: 0 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    li {
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px 0;
+      gap: 10px;
+    }
+
+    .subject-image {
+  width: 100%;
+  max-width: 200px; /* Adjust the maximum width as needed */
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.2s;
+}
+
+.subject-image:hover {
+  transform: scale(1.1);
+}
+
+    .button2nd {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .buttonsss {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .search-container {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .search-input {
+      padding: 10px;
+      width: 300px;
+      border: 1px solid #0b0b0b;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .search-button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: rgb(17, 16, 16);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-left: 10px;
+      transition: transform 0.2s;
+    }
+
+    .search-button:hover {
+      transform: scale(1.1);
+    }
+    .image-link {
+  display: inline-block; /* Ensure the link behaves as a block element */
+}
+
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="white">
+      <button class="nav-button">Back</button>
+      <button class="nav-button">Home</button>
+      <div class="nav-button">Grade 7</div>
+      <div class="profile-container">
+        <div class="profile-icon">
+          <img src="profile.jpg" alt="Profile Image"><!-- Replace with your profile image -->
+        </div>
+        <div class="profile-text">Profile</div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="buttons">
+    <a href="Eng.html">
+      <img src="English.png" alt="English" class="subject-image image-link">
+    </a>
+    <img src="Science.png" alt="Science" class="subject-image">
+    <img src="Mathematics.png" alt="Math" class="subject-image">
+    <img src="History.png" alt="History" class="subject-image">
+    <img src="Hindi.png" alt="Hindi" class="subject-image">
+  </div>
+  <div class="button2nd">
+    <!-- Add more buttons as needed -->
+  </div>
+  <div class="buttonsss">
+    <img src="activity.png" alt="activity" class="subject-image">
+  </div>
+  <div class="search-container">
+    <input type="text" class="search-input" placeholder="Search...">
+    <button class="search-button">Search</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
